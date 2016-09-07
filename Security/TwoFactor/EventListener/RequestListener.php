@@ -65,7 +65,7 @@ class RequestListener
      */
     public function onCoreRequest(GetResponseEvent $event)
     {
-        $request = $event->getRequest();
+        return; // TODO: Disabled
 
         // Check for master request
         if (!$event->isMasterRequest()) {
